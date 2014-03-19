@@ -372,7 +372,7 @@ header #topnav ul li a {
   font-size: 18px;
 }
 header #topnav ul li a:hover {
-  color: #eb5642;
+  color: #170906;
 }
 .scroll {
   position: fixed;
@@ -891,7 +891,7 @@ footer .mini-colophon .flag {
 -------------------------------------------------- */
 #contact-header {
   text-align: center;
-  padding-top: 135px;
+  padding-top: 71px;
   background: url('images/contact_bg.jpg');
   background-position: 0px -433px;
   background-size: cover;
