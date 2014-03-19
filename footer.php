@@ -5,7 +5,7 @@
 		      <h3>About Brandon</h3>
 		      <p>Brandon is a web, mobile, and UX designer who occasionally hangs out with the cool kids in front-end development. He has experience in both agency and in-house creative departments as well as freelance work  both independently and as a subcontractor. </p>
 		      <p>Both graduates of Carthage College in Kenosha, Wisconsin, Brandon and his wife share a tiny <strike>Chicago</strike> Milwaukee apartment with two cats and an energetic Jack Russell Terrier rescue named Charley.</p>
-			  <a href="#">Read More &raquo;</a>
+			  <a href="/about">Read More &rarr;</a>
 			  <div class="social">
 				  <a href="http://twitter.com/brandonmorreale"><i class="ss-twitter" id="twitter" style="color:#00aced ;"></i></a>
 				  <a href="http://dribbble.com/brandonmorreale"><i class="ss-dribbble" id="dribbble" style="color:#C73B6F;"></i></a>
@@ -23,7 +23,12 @@
 				  </div>
 			  </div>
 		    </div>
-		    <div class="copy">Handcrafted between ORD + MKE<br>&copy; 1986-<?= date('Y') ?></div>
+		    <div class="mini-colophon">
+		    	<span class="copy">Made in the Midwest &copy; 1986-<?= date('Y') ?></span>
+		    	<span class="latitude">43.0500° N, 87.9500° W</span>
+		    	<span class="snakesonplanes">ORD &rarr; MKE</span>
+		    	<span class="flag"><img src="/content/images/sm_flag.png"></span>
+		    </div>
 		</div>
 	<div class="clearfix"></div>
 </footer>

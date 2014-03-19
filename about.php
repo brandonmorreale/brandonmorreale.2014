@@ -1,25 +1,17 @@
 <?php include 'header.php'; ?>
-<title>All Things Go | Home Page</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<title>All Things Grow | Brandon Morreale – Web Designer, Front-End Developer</title>
+<meta name="author" content="Brandon Morreale" />
+<meta name="keywords" content="Graphic Designer, Art Director, Milwaukee, Shorewood, Oak Park, Chicago, Web Design, Websites, Marketing, Creative Designer, Front End Designer, Freelance" />
+<meta name="description" content="Brandon Morreale is a web designer and developer offering web design as well as front-end programming, HTML5, CSS3, cms, javascript, and jquery services. He is based in Milwaukee." />
 <?php include 'scripts.php'; ?>
 <?php include 'navigation.php'; ?>
 
 <div id="about-header">
 		<h1>About Brandon</h1>
-		<div class="social">
-			  <a href="http://twitter.com/brandonmorreale"><i class="ss-twitter" id="twitter" style="color:#fff ;"></i></a>
-			  <a href="http://dribbble.com/brandonmorreale"><i class="ss-dribbble" id="dribbble" style="color:#fff;"></i></a>
-			  <a href="http://linkedin.com/in/bmorreale"><i class="ss-linkedin" id="linkedin" style="color:#fff"></i></a>
-			  <a href="http://instagram.com/brandon_morreale"><i class="ss-instagram" id="instagram" style="color:#fff"></i></a>
-			  <a href="http://rdio.com/people/bmorreale"><i class="ss-rdio" id="rdio" style="color:#fff"></i></a>
-			  <a href="http://svpply.com/brandonmorreale"><i class="ss-svpply" id="svpply" style="color:#fff"></i></a>
-		  </div>
 	</div>
 <div id="about" class="container">
 	<div class="content">
 		<div class="fifty">
-			<img src="https://scontent-a-iad.xx.fbcdn.net/hphotos-prn1/45625_547645043297_4661243_n.jpg">
 			<h2>I am a web and UX designer living in Milwaukee. Sometimes my v-necks are too deep.</h2>
 			 <p>I grew up in north central Illinois on a steady diet of pop culture, Prismacolor pencils, and America Online. More recently I have designed and developed web and mobile sites for both B2B and B2C companies large and small. I believe in clean, structured, and typographically sound design and it's effect on user experience. I have experience in both agency and in-house creative departments as well as freelance work both independently and as a subcontractor.</p>  
 <p>In addition I am also a distance runner, road cyclist, craft beer enthusiast, and I enjoy sampling local coffee <a target="_blank" href="http://stonecreekcoffee.com">here</a>, and <a href="http://colectivocoffee.com" target="_blank">here</a>.</p>
@@ -45,7 +37,7 @@
 				</li>
 				<li>
 					<span class="job">Boost Marketing</span>
-					<span class="title">Senior Designer + Front-End Developer</span>
+					<span class="title">Sr. Designer + Front-End Developer</span>
 					<span class="local">Wheaton, IL</span>
 					<span class="date">2008-2010</span>
 					<p>Responsible for a variety of web- and print-based projects for both B2B and B2C clients, including: complete branding design, print collateral, direct mail, print advertising, email campaign design and management, website design, HTML/XHTML/CSS programming, and Wordpress design and programming.</p>
@@ -63,6 +55,15 @@
 					<span class="label">Education</span>
 					<span class="name">Carthage College '08</span>
 					<span>Kenosha, Wisconsin<br>BA &ndash; Communication + Digital Media</span>	
+				</li>
+				<h2 class="site">Social</h2>
+				<li class="social">
+				  <a href="http://twitter.com/brandonmorreale"><i class="ss-twitter" id="twitter" style="color:#00aced ;"></i></a>
+				  <a href="http://dribbble.com/brandonmorreale"><i class="ss-dribbble" id="dribbble" style="color:#C73B6F;"></i></a>
+				  <a href="http://linkedin.com/in/bmorreale"><i class="ss-linkedin" id="linkedin" style="color:#007bb6"></i></a>
+				  <a href="http://instagram.com/brandon_morreale"><i class="ss-instagram" id="instagram" style="color:#4E433C"></i></a>
+				  <a href="http://rdio.com/people/bmorreale"><i class="ss-rdio" id="rdio" style="color:#008fd5"></i></a>
+				  <a href="http://svpply.com/brandonmorreale"><i class="ss-svpply" id="svpply" style="color:#fff"></i></a>
 				</li>
 			<h2 class="site">Site</h2>
 				<li><p>This site was designed and developed by Brandon Morreale. It is hand coded in PHP using <a target="_blank" href="http://www.panic.com">Coda</a> with stylesheets in <a target="_blank" href="http://www.lesscss.org">LESS</a>. Fonts presented are Proxima Nova, Abril Display, Courier, and Georgia. They are served via <a target="_blank" href="http://www.typekit.com">Typekit</a>. Web hosting by <a target="_blank" href="http://www.mediatemple.com">Media Temple</a>. Icons from <a href="http://www.symbolset.com" target="_blank">Symbolset</a> + <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>. Stashed on <a href="http://www.github.com">Github</a>. Made with love in the Midwest.</p></li>

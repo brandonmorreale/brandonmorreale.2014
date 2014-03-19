@@ -19,7 +19,7 @@
   user-select: none;
 }
 
-body {background:url(../content/images/bg.png); 
+body {background: @background;
 	&.menu-padding {padding-top: 100px; padding-bottom: 100px;}
 }
 
@@ -29,9 +29,14 @@ p {font-size: 14px; line-height: 22px; }
 /*  --------------------------------------------------
 :: Base	
 -------------------------------------------------- */
-@black: #000000;
-@white: #ffffff;
-@background: #0c0b0b;
+@black: #170906;
+@white: #d0ceb9;
+@yellow: #ffd133;
+@red: #eb5642;
+@blue: #63adde;
+@orange: #fe9400;
+@lighter: #373630;
+@background: #170906;
 @accent: #fce016;
 
 .clearfix{ 
@@ -63,6 +68,12 @@ p {font-size: 14px; line-height: 22px; }
 .regular {font-weight:400;}
 .bold {font-weight:700;}
 .black {font-weight:900;}
+
+.din {font-family: "din-condensed-web-1", "din-condensed-web-2"; font-weight:400; text-transform:uppercase;}
+.freight {font-family:"freight-display-pro-1", "freight-display-pro-2"; font-weight:400;}
+.freightbold {font-family:"freight-display-pro-1", "freight-display-pro-2"; font-weight:900;}
+.abril {font-family: "abril-display-1", "abril-display-2";}
+
 
 /*  --------------------------------------------------
 :: Grid	
@@ -104,63 +115,77 @@ p {font-size: 14px; line-height: 22px; }
 -------------------------------------------------- */
 
 header {padding:40px 0px; display: block; transition:all .2s ease; width:100%; border-bottom: 1px solid rgba(255,255,255,.2); position:fixed; z-index: 9999;
-	.container {
-		#branding {.left; position: relative; color:@black; transition:all .2s ease; width:200px; height:40px; background: url(../content/images/logo-white.svg); background-size: 200px 40px; text-indent: -9999px; color:white;}
-		#topnav {
-			ul {.right; padding-top:10px;
+		#branding {.left; position: relative; color:black; transition:all .2s ease; width:200px; height:40px; background: url(../content/images/logo-white.svg); background-size: 200px 40px;  margin-left:50px; text-indent: -9999px;
+			a {display: block; height:100%;}
+		}
+		#topnav { 
+			ul {.right; padding-top:10px; margin-right:50px; .din;
 				li { display: inline; margin:0 10px;
 					&:last-child {margin-right:0px;}
-					a {color:@white; .regular; font-size: 13px; font-family: courier;}
+					a {color:white; .regular; font-size: 18px; 
+						&:hover {color:@red;}
+					}
 				}
 			}
 		}
 	}
-	&.scroll {position: fixed; top:0; padding: 20px 0px; background: rgba(0,0,0,.8);
-		#branding {color: white; width:100px; height:20px; background: url(../content/images/logo-white.svg); background-size: 100px 20px;}
+	&.scroll {position: fixed; top:0; padding: 20px 0px; background: rgba(23,9,6,.8);
+		#branding {color: @white; width:100px; height:20px; background: url(../content/images/logo-white.svg); background-size: 100px 20px;}
 		ul { padding-top:0px !important;
 			li {
-				a {font-size: 12px !important;}
+				a {font-size: 16px !important; color:@white !important;
+					&:hover {color:@red !important}
+				}
+				
 			}
 		}
-	}
-
 }
+.page-wrapper {position:absolute;
+}
+.slidenav {right: 0px; width: 250px; display: block; position: absolute; margin-top:0px; }
 
 /*  --------------------------------------------------
 :: Home Page
 -------------------------------------------------- */
 
-#hero { .textcenter;  border-bottom:rgba(255,255,255,.2); background:url(http://unsplash.s3.amazonaws.com/batch%207/color-correct-coffee.JPG); background-size: cover; padding:165px 0 75px;
-	.headline { background:url(../content/images/bgx.png) center center no-repeat; padding:100px 0px;
-		h1 {color:@white; font-size: 60px; padding-top: 100px; line-height: 60px; font-family: "abril-display-1", "abril-display-2"; font-weight:800; font-style:italic; letter-spacing:-2px; padding:15px 0 10px;}
-		h2 {width:50%; .centered; font-size: 15px; line-height: 23px;}
+#hero { .textcenter;  border-bottom:rgba(255,255,255,.2); background:url(../content/images/hero_bg.jpg); background-size: cover; padding:165px 0 75px; background-position: center bottom;
+	.headline { padding:0px 0px 100px;
+		h1 {color:@black; .abril; font-size:83px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px; line-height:83px; text-align: left;}
+		h2 {width:50%; margin:10px 0 0 150px; text-transform:uppercase; font-style:italic; font-size: 12px; line-height: 23px;}
 	}
 }
 #worklist { margin-bottom: 40px;
 	.workintro { .textcenter; margin:30px 0px;
-		h2 {color:white; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:44px; font-weight:800; margin-bottom:20px; margin-top:50px;}
-		p {width:50%; display: block; margin:10px auto; color:white; font-size: 12px; 
-			&:after{content:''; width:200px; height:1px; border-bottom: 1px solid #222; display: block; margin: 20px auto -5px;}
+		h2 {color:@white; .abril; font-size:58px; font-weight:800; margin-bottom:20px; margin-top:70px; font-style: italic; letter-spacing: -2px; }
+		span {width:50%; display: block; margin:10px auto; color:@white; font-size: 14px; .din;
+			&:after{content:''; width:200px; height:1px; border-bottom: 1px solid @lighter; display: block; margin: 10px auto -5px;}
 		}
 	}
 	
 	ul.portfolio { margin-top: 40px;
-		li { width:227px; display:inline; float: left; margin-right:30px; transition:all .2s ease; margin-bottom: 40px;
+		li { width:313px; display:inline; float: left; margin-right:30px; transition:all .2s ease; margin-bottom: 40px; height:205px;
 			&:first-chid {}
-			&:nth-child(4n) {margin-right:0px !important;}
+			&:nth-child(3n) {margin-right:0px !important;}
 			 img {/*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android 
     filter: gray;
-    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */ } 
-			.preview {position: relative; margin-bottom: 10px;
-				.view {position: absolute; top:0; left: 0;
-					a {text-align: center; display: block; width: 220px; padding: 12px;  visibility: none; opacity:0; transition: all .2s ease;
-						&:hover {opacity:1; visibility: visible; color:white;}
-					}
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */ width:100%;} 
+			.preview {position: relative; margin-bottom: 0px; height:120px; overflow:hidden; box-shadow:0px 0px 6px #202227;
+				.view {position: absolute; top:0; left: 0; width:100%; height:100%; background: @red; opacity:0; transition:all .2s ease;
+					a {text-align: center; display: block; width: 100%; padding-top:85px;  visibility: none; opacity:1; transition: all .2s ease; .din; font-size: 16px; color:white; height:100%;}
 				}
 			}
-			.project-data {
-				h3 {color:white; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:16px; font-weight:600;}
-				span.type {color:#666; font-size: 12px;border-bottom: 1px SOLID #222; display:block; padding-bottom: 11px; font-family: courier}
+			&:hover {
+				.project-data { border-bottom: 4px solid @red;
+					.type {color:@red;}
+				}
+				.view {opacity:.8;
+					a {padding-top:60px;}
+				}
+			}
+			.project-data { border-bottom:1px solid @lighter; transition:all .2s ease;
+				h3 {color:@white;  .din; font-size:28px; letter-spacing: -1px; line-height: 31px; font-weight:600; padding:10px 10px 0; transition:all .3s ease;}  
+				span.type {color:@red; font-size: 11px;  display:block;  padding:3px 10px 10px 10px; text-transform:uppercase; font-style:italic;}
+				
 			}
 		}
 	}
@@ -170,18 +195,22 @@ header {padding:40px 0px; display: block; transition:all .2s ease; width:100%; b
 :: Footer
 -------------------------------------------------- */
  
-footer {width:100%; border-top:1px solid #222; height:100px; clear:both; margin-top:40px; display: block; padding-bottom: 40px;
-	.contact {text-align:center; color:#fff; font-size:24px; margin:30px 0; border-bottom:1px solid #222; padding-bottom: 30px;
-		a {color:rgb(252, 224, 22); padding: 3px; border-bottom:1px solid rgb(252, 224, 22); }
-	}
-	h3 {color:white; font-family: "proxima-nova-1", "proxima-nova-2"; font-weight:800; font-size:16px; font-weight:600; margin-bottom: 20px; text-transform: uppercase;}
-	.about_col {width:100%; color:white; width: 50%; text-align: center; display: block; margin:0 auto;
-		&:first-child {
-			p {line-height: 18px; margin-bottom: 10px;}
+footer {width:100%; border-top:1px solid @lighter; height:100px; clear:both; margin-top:40px; display: block; padding-bottom: 40px;
+	.contact {text-align:center; color:@white; font-size:28px; margin:30px 0 60px; border-bottom:1px solid @lighter; padding-bottom: 30px; .abril;
+		a {color:@blue; padding: 3px; border-bottom:1px solid @blue; transition:all .2s ease;
+			&:hover {color:@orange; border-bottom:1px solid @orange; }
 		}
-		a {margin-top:25px; padding: 3px; border-bottom: 1px solid @accent; color:rgb(252, 224, 22);  }
 	}
-	.social { margin-top:40px;
+	h3 {color:@white; .din; font-weight:800; font-size:22px; font-weight:600; margin-bottom: 10px; text-transform: uppercase;}
+	.about_col {width:100%; color:@white; width: 60%; text-align: center; display: block; margin:0 auto;
+		&:first-child {
+			p {line-height: 23px; margin-bottom: 10px; .abril; font-size:14px;}
+		}
+		a {margin-top:25px; padding: 3px; border-bottom: 3px double @red; color:@red;  
+			&:hover {border-color: @orange; color: @orange;}
+		}
+	}
+	.social { margin-top:40px; margin-bottom: 40px;
 		a {border-bottom: none;} 
 		i {display: inline; font-size: 14px; padding: 10px 6px; cursor: pointer; top:0px; transition:all .2s ease; position: relative;
 			&:hover {top:-5px;}
@@ -189,14 +218,19 @@ footer {width:100%; border-top:1px solid #222; height:100px; clear:both; margin-
 			.ss-linkedin {}
 			.ss-twitter {}
 		}
-		.sociallabel {margin-top:10px; color:#666; font-family: courier; text-transform: uppercase; font-weight: 400; height:14px; 
+		.sociallabel {margin-top:10px; color:@orange; font-family: georgia; text-transform: uppercase; font-weight: 400; height:14px; font-style: italic; font-size:11px;
 			span {display:none;
 				&.active {display: block;}
 			}
 		}
 	}
-	.copy {color:white; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:16px; font-weight:400; display: block; margin: 40px auto 20px; font-size: 12px; .textcenter;}
 	.clearfix {padding-bottom: 40px;}
+	
+	.mini-colophon { display: block; margin:10px auto 50px;
+		width:62%; border:1px solid @lighter; font-family: "proxima-nova-1", "proxima-nova-2"; color:@lighter;
+		span {padding:15px 15px 13px; display: inline-block; text-align:center; border-right: 1px solid @lighter; margin-top:-2px; }
+		.flag {border-right:none;}
+	}
 }
 
 
@@ -206,8 +240,7 @@ footer {width:100%; border-top:1px solid #222; height:100px; clear:both; margin-
 
 
 #about-header {text-align: center; padding-top:200px; background: url('http://unsplash.s3.amazonaws.com/batch%205/unsplash-kitsune-3.jpg');background-position: 0px -433px; background-size:cover; padding-bottom: 50px;
-		h1 {color:white; font-family: "abril-display-1", "abril-display-2"; font-size:44px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px;
-			&:after{content:''; width:200px; height:1px; border-bottom: 1px solid #fff; display: block; margin: 20px auto -5px;}
+		h1 {color:@white; .abril; font-size:44px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px;
 		}
 		.social { margin-top:40px;
 		a {border-bottom: none;} 
@@ -220,27 +253,28 @@ footer {width:100%; border-top:1px solid #222; height:100px; clear:both; margin-
 	a { transition:all .2s ease;
 		&:hover {color:#00aced !important; border-bottom: 1px solid #00aced !important;}
 	}
-	p {color:white;
-		a {border-bottom: 1px solid @accent; color: @accent;}
+	p {color:@white;
+		a {border-bottom: 1px solid @red; color: @red;
+		}
 	}
-	h3 {color:white; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:15px; color:white; font-weight:800; margin-bottom:10px; margin-top: 40px; text-transform: uppercase;
+	h3 {color:@white; .din; font-size:15px; color:@white; font-weight:800; margin-bottom:10px; margin-top: 40px; text-transform: uppercase;
 		&:after{content:''; width:100px; height:1px; border-bottom: 1px solid #333; display: block; margin: 10px 0 10px 0px;}
 	}
 	.fifty {margin-right:4%; width:45%;
 		p {margin: 0 0 12px;}
-		h2 {color:white; font-family: georgia; font-size:19px; margin-bottom:20px; line-height: 27px;}
-		img {width:98%; margin-bottom: 20px; border: 8px solid #222;}
+		h2 {color:@white; .din; font-size:24px; margin-bottom:20px; line-height: 27px;}
+		img {width:98%; margin-bottom: 20px; border: 8px solid @lighter;}
 	}
 	.twentyfive { font-size: 12px;
 		img {max-width: 100%;}
-		h2 {color:white; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:20px; color:white; font-weight:800; margin-bottom:10px; margin-top: 0px; text-transform: uppercase;
+		h2 {color:@white; .din; font-size:16px; color:@white; font-weight:800; margin-bottom:10px; margin-top: 0px; text-transform: uppercase;
 			&.site {margin-top:40px !important;}
 			&:after{content:''; width:100px; height:1px; border-bottom: 1px solid #333; display: block; margin: 10px 0 10px 0px;}
 		}
-		i {color:white; margin-right: 5px; width: 10px; display: inline-block;}
-		span {display: block; color:white;
-			&.job {color:@accent; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:13px; font-weight:800; margin-bottom:0px; margin-top: 15px; text-transform: uppercase; }
-			&.title {color:white; font-family: "proxima-nova-1", "proxima-nova-2";}
+		i {color:@white; margin-right: 5px; width: 10px; display: inline-block;}
+		span {display: block; color:@white;
+			&.job {color:@red; .din; font-size:14px; font-weight:800; margin-bottom:2px; margin-top: 15px; text-transform: uppercase; }
+			&.title {color:@white; .abril; text-transform: uppercase; font-style: italic; font-size:11px}
 			&.local {color:#666; font-family: "proxima-nova-1", "proxima-nova-2"; float: left;}
 			&.date {color:#666; font-family: "proxima-nova-1", "proxima-nova-2"; float: left; margin-left: 20px;}
 		}
@@ -250,8 +284,14 @@ footer {width:100%; border-top:1px solid #222; height:100px; clear:both; margin-
 				&.education { font-size: 12px; line-height: 16px;
 					.name {font-family: "proxima-nova-1", "proxima-nova-2"; font-weight: 700;}
 				}
-				.label {color:@accent; font-family: "proxima-nova-1", "proxima-nova-2"; font-size:13px; font-weight:800; margin-bottom:7px; margin-top: 15px; text-transform: uppercase; }
-				a {border-bottom: 1px solid @accent; color: @accent;}
+				.label {color:@red; .din; font-size:13px; font-weight:800; margin-bottom:7px; margin-top: 15px; text-transform: uppercase; }
+				a {border-bottom: 1px solid @red; color: @red;}
+				&.social {
+					i {font-size:14px; transition:all .2s ease;
+						&:hover {color:@orange !important;}
+					}
+					a {border-bottom:none !important; margin-right: 10px;}
+				}
 			}
 		}
 	}
@@ -259,11 +299,78 @@ footer {width:100%; border-top:1px solid #222; height:100px; clear:both; margin-
 }
 
 /*  --------------------------------------------------
+:: Contact
+-------------------------------------------------- */
+
+#contact-header {text-align: center; padding-top:135px; background: url('images/contact_bg.jpg');background-position: 0px -433px; background-size:cover; padding-bottom: 50px; background-position: center bottom;
+		h1 {color:@white; .abril; font-size:44px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px;
+		}
+		.social { margin-top:40px;
+		a {border-bottom: none;} 
+		i {display: inline; font-size: 14px; padding: 10px 10px; cursor: pointer; top:0px; position: relative; transition:all .2s ease;
+			&:hover {top:-5px; }
+		}
+	}
+}
+
+
+#contact { padding:50px 0;
+	h2 {.abril; font-size:23px; margin-bottom:20px; .textcenter; color:white;}
+	.availability {.abril; font-style: italic; color:#00CC66; .textcenter; display: block; margin-bottom:50px;
+		&:after{content:''; width:100px; height:1px; border-bottom: 1px solid #333; display: block; margin: 20px auto 10px auto;}
+	}
+	
+	.methods { color:@white; text-align: center; margin-top:50px; padding:0 200px;
+		h3 {.din; font-size: 18px; margin-bottom:5px; color:@red;}
+		span {font-size: 14px; .abril;}
+		.phone {width:20%; .left; margin:0%;}
+		.form {width:20%; .left; margin:0%;}
+		.email {width:20%; .left; margin:0%;}
+	}
+	
+	.form {.textcenter; margin-top:20px; clear:both;
+		label {.abril; color:@white; display: block; font-size: 18px; margin-bottom:5px; font-weight:800; font-style:italic; text-transform: uppercase;}
+		.group { margin:20px 0;}
+		input {background: none; border:3px double @lighter; padding:20px; width:60%; color:white; text-align: center;  font-size:18px; .din;}
+		textarea {background:none; border:3px double @lighter; padding:20px; width:60%; color:white; text-align: center;  font-size:18px; .abril;}
+		input.btn {width:10%; background: @red; border:none; cursor: pointer; transition:all .2s ease; padding:10px;
+			&:hover {background:@orange;}
+		}
+	}
+	
+}
+
+
+/*  --------------------------------------------------
 :: Portfolio
 -------------------------------------------------- */
 
-
+#project-header {text-align: left; padding-top:205px;  padding-bottom: 50px;
+		&:after {content:''; clear:both; margin:20px 0;}
+		h1 {color:white; .abril; font-size:64px; font-weight:800; margin-bottom:40px; font-style: italic; letter-spacing: -1px; line-height:80px; border-bottom:3px double @lighter;}
+		p {color:@white; width:700px; .left;
+			&:after {content:''; clear:both; margin:20px 0;}
+		}
+		.meta {width:250px; .right; border:1px solid @lighter;  margin-right:0px; margin-bottom: 40px; margin-top:-102px;
+			h4 {color:white; .din; font-size:16px; padding:20px; border-bottom: 3px double @lighter;}
+			.group { color:@white; .abril; font-style: italic; padding:10px 20px 10px; border-bottom: 1px solid @lighter;
+				.label {color:@red; font-family: "proxima-nova-1", "proxima-nova-2"; text-transform: uppercase; font-weight: 400; font-size: 12px; display: block; font-style: normal;}
+				a {color:@blue; transition:all .2s ease;
+					&:hover {color:@orange;}
+				}
+			}
+			.work-nav {width:250px; .right;
+			span { display: block; float: left; color:@blue; text-align: left; font-family: "proxima-nova-1", "proxima-nova-2"; text-transform: uppercase; font-weight: 400; font-size: 12px;}
+				a { transition:all .2s ease;
+					&:hover {color:@orange;}
+				}
+				.prev {width:50px; color:@blue; padding: 20px 10px 15px 20px;}
+				.all {width:70px; text-align: center; color:white !important; padding: 20px 10px 15px 10px;}
+				.next {width:50px; text-align: right; color:@blue; padding: 20px 20px 15px 10px;}
+			}
+		}
+		
+}
 #portfolio {
-	
-	
+	img {margin:20px 0;}
 }
