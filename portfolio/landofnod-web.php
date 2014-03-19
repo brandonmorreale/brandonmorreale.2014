@@ -12,7 +12,7 @@
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> The Land of Nod</div>
 		<div class="group"><span class="label">Responsibilities</span> UX/UI, Web Design</div>
-		<div class="group"><span class="label">Agency</span> <a href="http://landofnod.com" target="blank">The Land of Nod</a></div>
+		<div class="group"><span class="label">Agency</span> <a href="http://landofnod.com" target="_blank">The Land of Nod</a></div>
 		<div class="work-nav">
 			<span class="prev"><a href="/portfolio/roehl-rspn.php">&larr; Prev</a></span>
 			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>

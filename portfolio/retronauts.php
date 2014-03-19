@@ -12,7 +12,7 @@
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> Retronauts</div>
 		<div class="group"><span class="label">Responsibilities</span>Web Design, UI/UX</div>
-		<div class="group"><span class="label">Agency</span> <a href="#" target="blank">Independent</a></div>
+		<div class="group"><span class="label">Agency</span> <a href="#" target="_blank">Independent</a></div>
 		<div class="work-nav">
 			<span class="prev"><a href="/portfolio/thepelicanstore.php">&larr; Prev</a></span>
 			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>

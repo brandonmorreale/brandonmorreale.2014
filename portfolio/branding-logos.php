@@ -12,7 +12,7 @@
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> Various</div>
 		<div class="group"><span class="label">Responsibilities</span>Branding &amp; Identity</div>
-		<div class="group"><span class="label">Agency</span> <a href="#" target="blank">Various</a></div>
+		<div class="group"><span class="label">Agency</span> <a href="#" target="_blank">Various</a></div>
 		<div class="work-nav">
 			<span class="prev"><a href="/portfolio/lamacchia.php">&larr; Prev</a></span>
 			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>

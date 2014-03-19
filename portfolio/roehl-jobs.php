@@ -12,7 +12,7 @@
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> Roehl Transport</div>
 		<div class="group"><span class="label">Responsibilities</span> UX/UI, Web Design, Mobile Design, Front-End Development</div>
-		<div class="group"><span class="label">Agency</span> <a href="http://lightburndesigns.com" target="blank">Lightburn Designs</a></div>
+		<div class="group"><span class="label">Agency</span> <a href="http://lightburndesigns.com" target="_blank">Lightburn Designs</a></div>
 		<div class="work-nav">
 			<span class="prev"><a href="/portfolio/branding-logos.php">&larr; Prev</a></span>
 			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>
