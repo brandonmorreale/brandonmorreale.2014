@@ -7,7 +7,6 @@
 <?php include '../navigation.php'; ?>
 <div id="project-header" class="container">
 	<h1>Retronauts</h1>
-	<p>Seinfeld ipsum dolor sit amet George: I would drape myself in velvet if it were socially acceptable. Puddy: I painted my face Elaine: You painted your face? Puddy: Yeah. Elaine: Why? Puddy: Well, you know, support the team. Elaine: It’s very hard being a stand-up comedian. Sometimes they don’t laugh. Jerry: Sometimes the road less traveled is less traveled for a reason. Jerry: When someone is lying, is it true that their pants are actually on fire? Jerry: Vandelay Industries, Kel Varnsen speaking. May we help you? Jackie Chiles: Rugged? The man’s a goblin.</p>
 	<div class="meta">
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> Retronauts</div>
@@ -19,6 +18,8 @@
 			<span class="next"><a href="/portfolio/lamacchia.php">Next &rarr;</a></span>
 		</div>
 	</div>
+	<p>After 1UP.com closed their doors in 2013 one of their major properties, Retronauts, remained intact. After a successful Kickstarter, this podcast and blog covering retro video games and computing relaunched in the later part of the year.</p>
+	<p>Featuring long-form writings and a podcast library this rebranding effort attempted to bring that feeling of nostalgia in a slick package.</p>
 </div>
 <div class="clearfix"></div>
 <div id="portfolio" class="container">

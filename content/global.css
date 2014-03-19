@@ -372,7 +372,7 @@ header #topnav ul li a {
   font-size: 18px;
 }
 header #topnav ul li a:hover {
-  color: #170906;
+  border-bottom: 1px solid white;
 }
 .scroll {
   position: fixed;
@@ -1064,11 +1064,21 @@ footer .mini-colophon .flag {
   color: #d0ceb9;
   width: 700px;
   float: left;
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 25px;
 }
 #project-header p:after {
   content: '';
   clear: both;
   margin: 20px 0;
+}
+#project-header p a {
+  color: #63adde;
+  transition: all .2s ease;
+}
+#project-header p a:hover {
+  color: #fe9400;
 }
 #project-header .meta {
   width: 250px;

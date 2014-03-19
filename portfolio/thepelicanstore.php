@@ -7,7 +7,6 @@
 <?php include '../navigation.php'; ?>
 <div id="project-header" class="container">
 	<h1>The Pelican Store</h1>
-	<p>Seinfeld ipsum dolor sit amet George: I would drape myself in velvet if it were socially acceptable. Puddy: I painted my face Elaine: You painted your face? Puddy: Yeah. Elaine: Why? Puddy: Well, you know, support the team. Elaine: It’s very hard being a stand-up comedian. Sometimes they don’t laugh. Jerry: Sometimes the road less traveled is less traveled for a reason. Jerry: When someone is lying, is it true that their pants are actually on fire? Jerry: Vandelay Industries, Kel Varnsen speaking. May we help you? Jackie Chiles: Rugged? The man’s a goblin.</p>
 	<div class="meta">
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> Pak Rite</div>
@@ -19,6 +18,8 @@
 			<span class="next"><a href="/portfolio/retronauts.php">Next &rarr;</a></span>
 		</div>
 	</div>
+	<p>Looking for a refresh over their existing site, The Pelican Store came to Lightburn looking to give the UI some modern polish.</p>
+	<p>Revisiting the navigation, creating a more seamless experience, easier access to products, highlighting features, and giving the content a little room to breathe created a significantly improved experience for the customer.</p>
 </div>
 <div class="clearfix"></div>
 <div id="portfolio" class="container">

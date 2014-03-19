@@ -123,7 +123,7 @@ header {padding:40px 0px; display: block; transition:all .2s ease; width:100%; b
 				li { display: inline; margin:0 10px;
 					&:last-child {margin-right:0px;}
 					a {color:white; .regular; font-size: 18px; 
-						&:hover {color:@black;}
+						&:hover {border-bottom:1px solid white;}
 					}
 				}
 			}
@@ -348,8 +348,11 @@ footer {width:100%; border-top:1px solid @lighter; height:100px; clear:both; mar
 #project-header {text-align: left; padding-top:205px;  padding-bottom: 50px;
 		&:after {content:''; clear:both; margin:20px 0;}
 		h1 {color:white; .abril; font-size:64px; font-weight:800; margin-bottom:40px; font-style: italic; letter-spacing: -1px; line-height:80px; border-bottom:3px double @lighter;}
-		p {color:@white; width:700px; .left;
+		p {color:@white; width:700px; .left; font-size: 18px; margin-bottom: 15px; line-height: 25px;
 			&:after {content:''; clear:both; margin:20px 0;}
+			a {color:@blue; transition:all .2s ease;
+				&:hover {color:@orange;}
+			}
 		}
 		.meta {width:250px; .right; border:1px solid @lighter;  margin-right:0px; margin-bottom: 40px; margin-top:-102px;
 			h4 {color:white; .din; font-size:16px; padding:20px; border-bottom: 3px double @lighter;}

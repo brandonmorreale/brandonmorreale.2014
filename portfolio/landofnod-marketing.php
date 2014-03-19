@@ -7,7 +7,6 @@
 <?php include '../navigation.php'; ?>
 <div id="project-header" class="container">
 	<h1>The Land of Nod</h1>
-	<p>Seinfeld ipsum dolor sit amet George: I would drape myself in velvet if it were socially acceptable. Puddy: I painted my face Elaine: You painted your face? Puddy: Yeah. Elaine: Why? Puddy: Well, you know, support the team. Elaine: It’s very hard being a stand-up comedian. Sometimes they don’t laugh. Jerry: Sometimes the road less traveled is less traveled for a reason. Jerry: When someone is lying, is it true that their pants are actually on fire? Jerry: Vandelay Industries, Kel Varnsen speaking. May we help you? Jackie Chiles: Rugged? The man’s a goblin.</p>
 	<div class="meta">
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> The Land of Nod</div>
@@ -19,6 +18,9 @@
 			<span class="next"><a href="/portfolio/thepelicanstore.php">Next &rarr;</a></span>
 		</div>
 	</div>
+	<p>The Land of Nod, a upscale three-tiered children's retailer and subsidiary of Crate & Barrel, carries with it a sense of humor, joy, and whimsy not found in many other places. In all facets of their digital and creative marketing, they strive for a voice and style that is unmatched, and impossible to recreate.</p>
+
+<p>Their digital marketing—including email design, advertising, and social media—is often the first contact with the customer, and as such, bears the responsibility of communicating the brand in an informative yet engaging manor.</p>
 </div>
 <div class="clearfix"></div>
 <div id="portfolio" class="container">

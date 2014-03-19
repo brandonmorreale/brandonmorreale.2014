@@ -1,5 +1,5 @@
 <?php include '../header.php'; ?>
-<title>LaMacchia - Web Design | Brandon Morreale – Web Designer, Front-End Developer</title>
+<title>LaMacchia Group - Web Design | Brandon Morreale – Web Designer, Front-End Developer</title>
 <meta name="author" content="Brandon Morreale" />
 <meta name="keywords" content="Graphic Designer, Art Director, Milwaukee, Shorewood, Oak Park, Chicago, Web Design, Websites, Marketing, Creative Designer, Front End Designer, Freelance" />
 <meta name="description" content="Brandon Morreale is a web designer and developer offering web design as well as front-end programming, HTML5, CSS3, cms, javascript, and jquery services. He is based in Milwaukee." />
@@ -7,7 +7,6 @@
 <?php include '../navigation.php'; ?>
 <div id="project-header" class="container">
 	<h1>LaMacchia Group</h1>
-	<p>Seinfeld ipsum dolor sit amet George: I would drape myself in velvet if it were socially acceptable. Puddy: I painted my face Elaine: You painted your face? Puddy: Yeah. Elaine: Why? Puddy: Well, you know, support the team. Elaine: It’s very hard being a stand-up comedian. Sometimes they don’t laugh. Jerry: Sometimes the road less traveled is less traveled for a reason. Jerry: When someone is lying, is it true that their pants are actually on fire? Jerry: Vandelay Industries, Kel Varnsen speaking. May we help you? Jackie Chiles: Rugged? The man’s a goblin.</p>
 	<div class="meta">
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> LaMacchia Group</div>
@@ -19,6 +18,8 @@
 			<span class="next"><a href="/portfolio/branding-logos.php">Next &rarr;</a></span>
 		</div>
 	</div>
+	<p>A design and build firm in Milwaukee came to Lightburn looking for a refresh on their current site.</p>
+	<p>We took a long look at their assets and found their portfolio was ready for the spotlight. Using beautiful photography, customer feedback and their knack for truly selling their products we created full-featured and informative pages as well as a searchable and sortable project library. </p>	
 </div>
 <div class="clearfix"></div>
 <div id="portfolio" class="container">

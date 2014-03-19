@@ -7,7 +7,6 @@
 <?php include '../navigation.php'; ?>
 <div id="project-header" class="container">
 	<h1>Roehl.Jobs</h1>
-	<p>Seinfeld ipsum dolor sit amet George: I would drape myself in velvet if it were socially acceptable. Puddy: I painted my face Elaine: You painted your face? Puddy: Yeah. Elaine: Why? Puddy: Well, you know, support the team. Elaine: It’s very hard being a stand-up comedian. Sometimes they don’t laugh. Jerry: Sometimes the road less traveled is less traveled for a reason. Jerry: When someone is lying, is it true that their pants are actually on fire? Jerry: Vandelay Industries, Kel Varnsen speaking. May we help you? Jackie Chiles: Rugged? The man’s a goblin.</p>
 	<div class="meta">
 		<h4>Project Info</h4>
 		<div class="group"><span class="label">Client</span> Roehl Transport</div>
@@ -19,6 +18,9 @@
 			<span class="next"><a href="/portfolio/landofnod-web.php">Next &rarr;</a></span>
 		</div>
 	</div>
+	<p>After multiple experiences with hiring and recruiting site, Roehl Transport, a global leader in truckload transportation and logistic services, set out to build their own full-featured job search website while also promoting their driver experiences.</p>
+	<p>Roehl.Jobs serves up search results by zip code, experience levels, regions with expansive job listings and the ability to instantly apply.</p>
+	<p>Also developed for Roehl was the 'Roehl Experience', a series of interactive pages highlighting the features, perks and experiences of potential Roehl drivers.</p>
 </div>
 <div class="clearfix"></div>
 <div id="portfolio" class="container">
