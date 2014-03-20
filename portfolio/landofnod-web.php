@@ -13,9 +13,9 @@
 		<div class="group"><span class="label">Responsibilities</span> UX/UI, Web Design</div>
 		<div class="group"><span class="label">Agency</span> <a href="http://landofnod.com" target="_blank">The Land of Nod</a></div>
 		<div class="work-nav">
-			<span class="prev"><a href="/portfolio/roehl-rspn.php">&larr; Prev</a></span>
+			<span class="prev"><a href="/portfolio/roehl-jobs.php">&larr; Prev</a></span>
 			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>
-			<span class="next"><a href="/portfolio/roehl-jobs.php">Next &rarr;</a></span>
+			<span class="next"><a href="/portfolio/roehl-rspn.php">Next &rarr;</a></span>
 		</div>
 	</div>
 	<p>The Land of Nod, a upscale three-tiered children's retailer and subsidiary of Crate & Barrel, carries with it a sense of humor, joy, and whimsy not found in many other places. In all facets of their digital and creative marketing, they strive for a voice and style that is unmatched, and impossible to recreate.</p>

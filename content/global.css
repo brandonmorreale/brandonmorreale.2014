@@ -691,13 +691,14 @@ footer .mini-colophon .flag {
 -------------------------------------------------- */
 #about-header {
   text-align: center;
-  padding-top: 200px;
-  background: url('http://unsplash.s3.amazonaws.com/batch%205/unsplash-kitsune-3.jpg');
-  background-position: 0px -433px;
+  padding-top: 360px;
+  background: url('images/logo_about.png');
+  background-position: center bottom;
   background-size: cover;
   padding-bottom: 50px;
 }
 #about-header h1 {
+  display: none;
   color: #d0ceb9;
   font-family: "abril-display-1", "abril-display-2";
   font-size: 44px;
@@ -822,9 +823,9 @@ footer .mini-colophon .flag {
   color: #eb5642;
   font-family: "din-condensed-web-1", "din-condensed-web-2";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   margin-top: 15px;
   text-transform: uppercase;
 }

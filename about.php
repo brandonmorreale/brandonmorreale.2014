@@ -66,7 +66,7 @@
 				  <a href="http://svpply.com/brandonmorreale"><i class="ss-svpply" id="svpply" style="color:#fff"></i></a>
 				</li>
 			<h2 class="site">Site</h2>
-				<li><p>This site was designed and developed by Brandon Morreale. It is hand coded in PHP using <a target="_blank" href="http://www.panic.com">Coda</a> with stylesheets in <a target="_blank" href="http://www.lesscss.org">LESS</a>. Fonts presented are Proxima Nova, Abril Display, Courier, and Georgia. They are served via <a target="_blank" href="http://www.typekit.com">Typekit</a>. Web hosting by <a target="_blank" href="http://www.mediatemple.com">Media Temple</a>. Icons from <a href="http://www.symbolset.com" target="_blank">Symbolset</a> + <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>. Stashed on <a href="http://www.github.com" target="_blank">Github</a>. Made on a <a href="http://apple.com" target="_blank">Mac</a>.</p></li>
+				<li><p>This site was designed and developed by Brandon Morreale. It is hand coded in PHP using <a target="_blank" href="http://www.panic.com">Coda</a> with stylesheets in <a target="_blank" href="http://www.lesscss.org">LESS</a>. Fonts presented are Proxima Nova, Abril Display, Din, and Georgia. They are served via <a target="_blank" href="http://www.typekit.com">Typekit</a>. Web hosting by <a target="_blank" href="http://www.mediatemple.com">Media Temple</a>. Icons from <a href="http://www.symbolset.com" target="_blank">Symbolset</a> + <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>. Stashed on <a href="http://www.github.com" target="_blank">Github</a>. Made on a <a href="http://apple.com" target="_blank">Mac</a>.</p></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>
