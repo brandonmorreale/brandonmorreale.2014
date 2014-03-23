@@ -41,5 +41,4 @@
 
   ga('create', 'UA-29127337-1', 'brandonmorreale.com');
   ga('send', 'pageview');
-
 </script>

@@ -29,14 +29,14 @@ p {font-size: 14px; line-height: 22px; }
 /*  --------------------------------------------------
 :: Base	
 -------------------------------------------------- */
-@black: #170906;
+@black: #282828;
 @white: #d0ceb9;
 @yellow: #ffd133;
 @red: #eb5642;
 @blue: #63adde;
 @orange: #fe9400;
-@lighter: #373630;
-@background: #170906;
+@lighter: #464646;
+@background: #282828;
 @accent: #fce016;
 
 .clearfix{ 
@@ -114,27 +114,32 @@ p {font-size: 14px; line-height: 22px; }
 :: Header
 -------------------------------------------------- */
 
-header {padding:40px 0px; display: block; transition:all .2s ease; width:100%; border-bottom: 1px solid rgba(255,255,255,.2); position:fixed; z-index: 9999;
-		#branding {.left; position: relative; color:black; transition:all .2s ease; width:200px; height:40px; background: url(../content/images/logo-white.svg); background-size: 200px 40px;  margin-left:50px; text-indent: -9999px;
-			a {display: block; height:100%;}
+header {padding:40px 0px; display: block; transition:all .2s ease; width:100%; position:fixed; z-index: 9999;
+		#branding {.left; position: relative; color:black; transition:all .2s ease;  background-size: 200px 40px;  margin-left:50px; text-indent: -9999px;
+			a {display: block; height:100%; height:40px; width:200px; background:url('../content/images/logo-white.svg'); background-size: 200px 40px; transition:all .2s ease;}
+			object {height:40px; width:200px; color:@white; display:block; transition:all .2s ease;
+				path {fill:white;}
+			}
 		}
 		#topnav { 
 			ul {.right; padding-top:10px; margin-right:50px; .din;
 				li { display: inline; margin:0 10px;
 					&:last-child {margin-right:0px;}
-					a {color:white; .regular; font-size: 18px; 
+					a {color:white; .regular; font-size: 18px;  transition:all .2s ease;
 						&:hover {border-bottom:1px solid white;}
 					}
 				}
 			}
 		}
 	}
-	&.scroll {position: fixed; top:0; padding: 20px 0px; background: rgba(23,9,6,.8);
-		#branding {color: @white; width:100px; height:20px; background: url(../content/images/logo-white.svg); background-size: 100px 20px;}
+	&.scroll {position: fixed; top:0; padding: 20px 0px; background:rgba(40,40,40,.9);
+		#branding {
+			a {color: @white; width:100px; height:20px; background-size: 100px 20px;}
+		}
 		ul { padding-top:0px !important;
 			li {
-				a {font-size: 16px !important; color:@white !important;
-					&:hover {color:@red !important}
+				a {font-size: 16px !important; color:white !important;
+					&:hover {color:@red !important; border-bottom:none !important;}
 				}
 				
 			}
@@ -150,8 +155,8 @@ header {padding:40px 0px; display: block; transition:all .2s ease; width:100%; b
 
 #hero { .textcenter;  border-bottom:rgba(255,255,255,.2); background:url(../content/images/hero_bg.jpg); background-size: cover; padding:165px 0 75px; background-position: center bottom;
 	.headline { padding:0px 0px 100px;
-		h1 {color:@black; .abril; font-size:83px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px; line-height:83px; text-align: left;}
-		h2 {width:50%; margin:10px 0 0 150px; text-transform:uppercase; font-style:italic; font-size: 12px; line-height: 23px;}
+		h1 {color:@black; .abril; font-size:94px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px; line-height:83px; text-align: left;}
+		h2 {width:50%; color:@black; margin:10px 0 0 150px; text-transform:uppercase; font-style:italic; font-size: 12px; line-height: 23px; letter-spacing: 1px;}
 	}
 }
 #worklist { margin-bottom: 40px;
@@ -254,14 +259,14 @@ footer {width:100%; border-top:1px solid @lighter; height:100px; clear:both; mar
 		&:hover {color:#00aced !important; border-bottom: 1px solid #00aced !important;}
 	}
 	p {color:@white;
-		a {border-bottom: 1px solid @red; color: @red;
+		a { color: @red;
 		}
 	}
 	h3 {color:@white; .din; font-size:15px; color:@white; font-weight:800; margin-bottom:10px; margin-top: 40px; text-transform: uppercase;
 		&:after{content:''; width:100px; height:1px; border-bottom: 1px solid #333; display: block; margin: 10px 0 10px 0px;}
 	}
 	.fifty {margin-right:4%; width:45%;
-		p {margin: 0 0 12px;}
+		p {margin: 0 0 12px; .abril;}
 		h2 {color:@white; .din; font-size:24px; margin-bottom:20px; line-height: 27px;}
 		img {width:98%; margin-bottom: 20px; border: 8px solid @lighter;}
 	}
@@ -278,14 +283,14 @@ footer {width:100%; border-top:1px solid @lighter; height:100px; clear:both; mar
 			&.local {color:#666; font-family: "proxima-nova-1", "proxima-nova-2"; float: left;}
 			&.date {color:#666; font-family: "proxima-nova-1", "proxima-nova-2"; float: left; margin-left: 20px;}
 		}
-		p {clear:both; font-size: 12px; line-height: 18px; padding-top: 5px; display: block;}
+		p {clear:both; font-size: 12px; line-height: 19px; padding-top: 5px; display: block; .abril;}
 		.personallist {
 			li {
 				&.education { font-size: 12px; line-height: 16px;
 					.name {font-family: "proxima-nova-1", "proxima-nova-2"; font-weight: 700;}
 				}
 				.label {color:@red; .din; font-size:13px; font-weight:800; margin-bottom:7px; margin-top: 15px; text-transform: uppercase; }
-				a {border-bottom: 1px solid @red; color: @red;}
+				a { color: @red;}
 				&.social {
 					i {font-size:14px; transition:all .2s ease;
 						&:hover {color:@orange !important;}
@@ -302,7 +307,7 @@ footer {width:100%; border-top:1px solid @lighter; height:100px; clear:both; mar
 :: Contact
 -------------------------------------------------- */
 
-#contact-header {text-align: center; padding-top:71px; background: url('images/contact_bg.jpg');background-position: 0px -433px; background-size:cover; padding-bottom: 50px; background-position: center bottom;
+#contact-header {text-align: center; padding-top:275px; background: url('images/contact_bg.jpg'); background-size:cover; padding-bottom: 50px; background-position: center bottom;
 		h1 {color:@white; .abril; font-size:44px; font-weight:800; margin-bottom:20px; font-style: italic; text-transform: lowercase; letter-spacing: -1px;
 		}
 		.social { margin-top:40px;
