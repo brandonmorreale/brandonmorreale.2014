@@ -179,6 +179,7 @@ a {
 }
 body {
   background: #282828;
+  min-width: 1200px;
 }
 body.menu-padding {
   padding-top: 100px;
