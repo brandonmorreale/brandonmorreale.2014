@@ -14,7 +14,7 @@
 		<div class="group"><span class="label">Agency</span> <a href="http://lightburndesigns.com" target="_blank">Lightburn Designs</a></div>
 		<div class="work-nav">
 			<span class="prev"><a href="/portfolio/landofnod-marketing.php">&larr; Prev</a></span>
-			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>
+			<span class="all"><a href="/work.php"><i class="icon-th"></i></a></span>
 			<span class="next"><a href="/portfolio/retronauts.php">Next &rarr;</a></span>
 		</div>
 	</div>

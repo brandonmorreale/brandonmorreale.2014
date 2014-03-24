@@ -14,7 +14,7 @@
 		<div class="group"><span class="label">Agency</span> <a href="#" target="_blank">Various</a></div>
 		<div class="work-nav">
 			<span class="prev"><a href="/portfolio/lamacchia.php">&larr; Prev</a></span>
-			<span class="all"><a href="/work"><i class="icon-th"></i></a></span>
+			<span class="all"><a href="/work.php"><i class="icon-th"></i></a></span>
 			<span class="next"><a href="/portfolio/roehl-jobs.php">Next &rarr;</a></span>
 		</div>
 	</div>
