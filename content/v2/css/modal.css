@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document *//* general elements */
+
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}  
+#boxes .window {
+background-color:#fff;
+  position:absolute;
+  width:440px;
+  height:800px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 5px;
+}
+ #boxes #dialog {
+  width:400px;
+  height:500px;
+}
+
+button, input, select, textarea { margin: 10px 0 0 0;}
+
+#dialog p {color: #6d6d6d; text-align: center; width: 370px; font: 12px/18px "facitweb-1","facitweb-2", palatino, "Palatino Linotype", "Book Antiqua", Palatino, serif ; }
+
+.close {position: absolute; top:0; right:0;}
+#form {margin: 0 0 0 0px;}
+#form p {text-align:center; margin: 20px 0 15px 0; font-family:"Abel", Palatino, Serif; font-size:16px; color:#d9593d; margin-bottom:20px;}
